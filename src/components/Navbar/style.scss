@@ -1,0 +1,15 @@
+.nav {
+    background-color: #FBEAFF;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+
+    .navClick {
+        color: #845EC2;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 55px
+    }
+}

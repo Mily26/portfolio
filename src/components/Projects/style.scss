@@ -1,0 +1,22 @@
+.projectsContent {
+    background-color: #FBEAFF;
+    .projectTitle {
+        text-align: center;
+        padding-top: 90px;
+        color: #845EC2;
+        
+    }
+    .nameOf {
+        color: #845EC2;
+        padding-bottom: 60px;
+        margin-top: 180px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+
+}
+
+
