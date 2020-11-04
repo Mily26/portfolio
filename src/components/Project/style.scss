@@ -1,9 +1,56 @@
-.image {
-    width: 580px;
-    border-radius: 10px;
+.cardProject {
+  background-color: blueviolet;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  .image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .name {
+    color: antiquewhite;
+  }
+  .github {
+    width: 30px;
+    &:hover {
+      background-color: rgb(202, 114, 236);
+    }
+  }
 }
-li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+@media screen and (min-width: 768px) {
+  .cardProject {
+    width: 100%;
+    margin-top: 24px;
+
+    overflow: hidden;
+
+    transition: all 0.25s;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 4px 12px 3px rgba(0, 0, 0, 0.2);
+    }
+    .image {
+      transition: all 0.25s ease;
+    }
+
+    .image {
+      width: 580px;
+    }
+    li {
+     
+      padding-bottom: 25px;
+    }
+
+    .github {
+      width: 3rem;
+      border-radius: 100%;
+      margin-top: 10px;
+    }
+  }
 }

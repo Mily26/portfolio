@@ -2,21 +2,37 @@
     background-color: #FBEAFF;
     .projectTitle {
         text-align: center;
-        padding-top: 90px;
         color: #845EC2;
-        
+
     }
     .nameOf {
         color: #845EC2;
-        padding-bottom: 60px;
-        margin-top: 180px;
-        display: flex;
-        justify-content: space-around;
         list-style: none;
-        flex-wrap: wrap;
         cursor: pointer;
+        padding: 0;
     }
-
 }
 
+@media screen and (min-width: 768px) {
 
+    .projectsContent {
+        .projectTitle {
+            padding-top: 90px;
+    
+            
+        }
+        .nameOf {
+          
+            padding-bottom: 125px;
+            display: flex;
+            justify-content: space-around;
+           
+            flex-wrap: wrap;
+            
+        }
+    
+    }
+    
+    
+    
+}

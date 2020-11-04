@@ -5,6 +5,8 @@ import Title from './components/Title';
 import Projects from './components/Projects';
 import {ThemeProvider} from './contexts/ThemeContext'
 import Navbar from './components/Navbar'
+import Skills from './components/Skills'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -23,11 +25,21 @@ function App() {
 
   }
 
-  const reposToShow = ["agency", "ClimaApp", "courflix", "devblog", "memory", "reading"]
+  const reposToShow = ["agency", "ClimaApp", "react-courflix", "devblog", "memory", "reading"]
+  const reposUrl = {
+    agency: "https://agency-roan.vercel.app/",
+    ClimaApp: "https://clima-app.vercel.app/",
+    "react-courflix": "https://react-courflix.vercel.app/",
+    devblog: "https://devblog-delta.vercel.app/",
+    memory: "https://memory-omega.vercel.app/",
+    reading: "https://reading-lemon.vercel.app/"
+  }
+
+  reposData.forEach(repo => repo.vercelUrl = reposUrl[repo.name])
 
   const contextData = {
     info: githubData,
-    repos: reposData.filter((repo) => reposToShow.indexOf(repo.name) != -1)
+    repos: reposData.filter((repo) => reposToShow.indexOf(repo.name) !== -1)
   };
 
 
@@ -38,6 +50,8 @@ function App() {
       <Title />
       <Bio />
       <Projects />
+      <Skills />
+      <Footer />
     </ThemeProvider>
   );
 }

@@ -5,7 +5,8 @@ import './style.scss'
 function Title() { 
     const {info} = useContext(ThemeContext);
     return (
-        <section className="hero">
+        <section id="aboutMe" className="hero">
+                        
             <h1 className="title">¡Hola! Me llamo {info.name}</h1>
         </section>
     )

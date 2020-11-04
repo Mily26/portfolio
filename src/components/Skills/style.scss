@@ -1,0 +1,44 @@
+.contentSkills {
+  text-align: center;
+
+  .skillsTitle {
+    color: #fbeaff;
+  }
+  .skills {
+    .circleSkill {
+      border-radius: 100%;
+      background-color: #fbeaff;
+      border: 1px solid antiquewhite;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+      padding: 61px;
+      margin: 84px;
+
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 12px 3px rgba(0, 0, 0, 0.2);
+      }
+      .iconSkills {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentSkills {
+    .skills {
+      justify-content: space-evenly;
+      display: flex;
+      padding: 85px;
+
+      .circleSkill {
+        padding: 60px;
+        width: 3rem;
+        margin: 0;
+        box-sizing: content-box;
+      }
+    }
+  }
+}

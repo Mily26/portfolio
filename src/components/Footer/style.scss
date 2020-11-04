@@ -1,0 +1,79 @@
+.contact {
+    background-color: #FBEAFF;
+    h2 {
+        color:  #845EC2;
+
+    }
+    img {
+        width: 80px;
+    }
+
+    .myMail {
+       text-align: center;
+        .mail {
+            color: #845EC2;
+            font-weight: 600;
+
+        }
+    }
+    .myLinkedin {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: #845EC2;
+            font-weight: 600;
+            margin-top: 18px;
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+       
+        
+        h2 {
+            margin-left: 12px;
+        }
+       
+        .myMail {
+            display: flex;
+            margin-left: 12px;
+            margin-bottom: 8px;
+            padding-bottom: 10px;
+            
+            .gmail {
+                width: 47px;
+                
+                
+            }
+            .mail {
+                font-size: 18px;
+                font-weight: 600;
+                margin-left: 15px;
+            }
+        }
+        .myLinkedin {
+            display: flex;
+            margin-left: 12px;
+            padding-bottom: 12px;
+           
+            .linkedin {
+                width: 47px;
+               
+            }
+            a {
+            
+                font-size: 18px;
+                font-weight: 600;
+                margin-left: 15px;
+            }
+        }
+        
+        
+    }
+    
+}
+
+
