@@ -25,14 +25,15 @@ function App() {
 
   }
 
-  const reposToShow = ["agency", "ClimaApp", "react-courflix", "devblog", "memory", "reading"]
+  const reposToShow = ["agency", "ClimaApp", "react-courflix", "devblog", "memory", "reading", "pokedex"]
   const reposUrl = {
     agency: "https://agency-roan.vercel.app/",
     ClimaApp: "https://clima-app.vercel.app/",
     "react-courflix": "https://react-courflix.vercel.app/",
     devblog: "https://devblog-delta.vercel.app/",
     memory: "https://memory-omega.vercel.app/",
-    reading: "https://reading-lemon.vercel.app/"
+    reading: "https://reading-lemon.vercel.app/",
+    pokedex: "https://pokedex-rust-eight.vercel.app/"
   }
 
   reposData.forEach(repo => repo.vercelUrl = reposUrl[repo.name])
